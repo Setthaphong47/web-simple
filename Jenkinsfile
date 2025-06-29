@@ -14,7 +14,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 bat 'docker rm -f my-web || true'
-                bat 'docker run -d --name my-web -p 8080:80 my-web-cicd'
+                bat 'docker run -d --name my-web -p 8888:80 my-web-cicd'
             }
         }
     }
